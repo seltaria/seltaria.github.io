@@ -1,0 +1,374 @@
+@import url('https://fonts.cdnfonts.com/css/futura-std-4');
+@import url('https://fonts.cdnfonts.com/css/cormorant-garamond');
+
+:root {
+  --duration: .2s;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(16, 7, 36);
+  /* background: linear-gradient(90deg, rgb(20, 0, 51), rgb(111, 84, 150)); */
+  color: rgb(242, 234, 255);
+  font-family: 'Futura Std', sans-serif;
+  font-size: 16px;
+  /* font-family: 'Cormorant Garamond', sans-serif; */
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 100px;
+}
+
+/* IMAGES */
+
+.img-alpaca {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  width: 300px;
+  transform: scaleX(-1) rotate(20deg);
+}
+
+.img-crocodile {
+  position: absolute;
+  top: 150px;
+  left: -20px;
+  width: 200px;
+  transform: rotate(20deg);
+}
+
+.img-fox {
+  position: absolute;
+  top: 550px;
+  left: 100px;
+  width: 250px;
+  transform: rotate(-20deg);
+}
+
+.blob1 {
+  position: absolute;
+  top: 250px;
+  right: -100px;
+  width: 350px;
+  transform: rotate(-120deg);
+  z-index: 1;
+}
+
+/* HEADER */
+
+.header {
+  /* display: flex;
+  justify-content: space-between;
+  align-items: center; */
+  /* padding: 30px 300px 30px 100px; */
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 2px;
+  font-family: 'Cormorant Garamond', sans-serif;
+}
+
+.header__border {
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg,rgb(176, 255, 79, 0.1), rgb(40, 191, 105), rgb(176, 255, 79), rgb(247, 255, 98), rgb(255, 127, 73), rgb(255, 127, 73, 0.1));
+  /* background: linear-gradient(90deg, rgb(40, 191, 105), rgb(176, 255, 79), rgb(247, 255, 98), rgb(255, 127, 73)); */
+}
+
+.nav__list {
+  display: flex;
+  font-size: 14px;
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.nav__link {
+  transition: color var(--duration) ease-in-out;
+}
+
+.nav__link:hover {
+  /* background: -webkit-linear-gradient(0deg, rgb(176, 255, 79), rgb(255, 242, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; */
+  color: yellow;
+}
+
+/* DESCRIPTION */
+
+.description {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: 1px solid white;
+}
+
+.description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  /* background-image: url('img/mahdi-bafande-DsMdMRNcHAo-unsplash.jpg'); */
+  background-image: url('img/5447769.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.description__container {
+  position: relative;
+  max-width: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  background-color: #20233D;
+  outline: 1px solid white;
+  outline-offset: 5px;
+  transition: outline-offset var(--duration) ease-in-out;
+}
+
+.description__container:hover {
+  outline-offset: 7px;
+}
+
+.description__rect {
+  position: absolute;
+  top: -27px;
+  left: -16px;
+  width: 595px;
+  height: 78px;
+  border: 3px solid #e1b896;
+  /* z-index: -1; */
+}
+
+/* SECTION */
+
+.section__text {
+  margin-bottom: 20px;
+}
+
+#react,
+#web-layout,
+#js {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+/* SKILLS */
+
+.skills {
+  padding-top: 60px;
+  padding-bottom: 64px;
+}
+
+.skills__title {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.skills__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  background-color: #19193c;
+  /* border: 1px solid white; */
+  box-shadow: 2px 2px 0px #e1b896;
+  transition-property: box-shadow, transform, color;
+  transition-duration: var(--duration);
+  transition-timing-function: ease-in-out;
+}
+
+.skills__item:hover {
+  color: yellow;
+  box-shadow: 4px 4px 0px #e1b896;
+  transform: translate(-2px, -2px);
+}
+
+/* GALLERY */
+
+.gallery__list {
+  display: flex;
+  align-items: center;
+}
+
+.gallery__list li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.gallery__item {
+  transition: transform var(--duration) ease-in-out;
+  outline: 1px solid white;
+  outline-offset: 6px;
+}
+
+.gallery__item:hover {
+  transform: scale(1.05);
+}
+
+/* REACT */
+
+#react,
+#web-layout,
+#js {
+  position: relative;
+}
+
+#react::before,
+#js::before,
+#web-layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#react::before {
+  background-image: url("/img/5447769-top-6.png");
+  background-position: bottom;
+}
+
+#web-layout::before {
+  background-image: url("/img/5447769-mid.png");
+  background-position: center;
+}
+
+#js::before {
+  background-image: url("/img/5447769-bottom-4.png");
+  background-position: top;
+}
+
+#react .container,
+#js .container,
+#web-layout .container {
+  position: relative;
+}
+
+#web-layout {
+  padding-bottom: 200px;
+  background-color: #172040;
+}
+
+#react .container {
+  transform: translateY(80px);
+}
+
+#js {
+  padding-bottom: 0;
+}
+#js .container {
+  transform: translateY(-180px);
+}
+
+/* FOOTER */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: gray;
+  font-size: 12px;
+}
+
+.footer__freepik a {
+  color: rgb(100, 100, 196);
+}
+
+/* BUTTON */
+
+.button-up {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid white;
+  transition: border-color var(--duration) ease-in-out;
+}
+
+.button-up:hover {
+  /* border-color: #e1b896; */
+  border-color: transparent;
+}
+
+.button-up svg {
+  transition: fill var(--duration) ease-in-out;
+}
+
+.button-up:hover svg {
+  fill: yellow;
+}
