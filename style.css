@@ -243,13 +243,19 @@ button {
 /* GALLERY */
 
 .gallery__list {
+  /* max-width: 80%;
+  overflow: hidden; */
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  gap: 50px;
 }
 
-.gallery__list li:not(:last-child) {
-  margin-right: 50px;
-}
+/* .gallery__wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+} */
 
 .gallery__item {
   transition: transform var(--duration) ease-in-out;
@@ -259,6 +265,25 @@ button {
 
 .gallery__item:hover {
   transform: scale(1.05);
+}
+
+.left,
+.right {
+  position: absolute;
+  top: 50%;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.left {
+  left: 0;
+  transform: rotate(-90deg);
+}
+.right {
+  right: 0;
+  transform: rotate(90deg);
 }
 
 /* REACT */
@@ -307,6 +332,10 @@ button {
 #web-layout {
   padding-bottom: 200px;
   background-color: #172040;
+}
+
+#react {
+  padding-top: 0;
 }
 
 #react .container {

@@ -8,6 +8,8 @@
 
   <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
   <script defer src="script.js"></script>
 
   <title>Seltaria | Portfolio</title>
@@ -63,29 +65,45 @@
           Делала в React разные штуки
         </p>
 
-        <button class="left">
-
-        </button>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <a class="gallery__link" href="https://seltaria.github.io/rock-paper-scissors-page/">
-              <img src="img/rock-1.jpg" alt="" width="300px">
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a href="https://seltaria.github.io/multi-step-form/">
-              <img src="img/form-1.jpg" alt="" width="300px">
-            </a>
-          </li>
-          <!-- <li class="gallery__item">
-            <a href="https://seltaria.github.io/social-dashboard/">
-              <img src="img/dash-1.jpg" alt="" width="300px">
-            </a>
-          </li> -->
-        </ul>
-        <button class="right">
-
-        </button>
+        <div class="gallery__container">
+          <!-- <button class="left">
+            <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+              <path id="XMLID_224_"
+                d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+                l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+                C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
+            </svg>
+          </button> -->
+          <ul class="gallery__list">
+            <!-- <div class="gallery__wrapper"> -->
+            <li class="gallery__item">
+              <a class="gallery__link" href="https://seltaria.github.io/rock-paper-scissors-page/">
+                <img src="img/rock-1.jpg" alt="" width="300px">
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="https://seltaria.github.io/multi-step-form/">
+                <img src="img/form-1.jpg" alt="" width="300px">
+              </a>
+            </li>
+            <li class="gallery__item">
+              <a href="https://seltaria.github.io/social-dashboard/">
+                <img src="img/dash-1.jpg" alt="" width="300px">
+              </a>
+            </li>
+            <!-- </div> -->
+          </ul>
+          <!-- <button class="right">
+            <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
+              <path id="XMLID_225_"
+                d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
+              l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
+              C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
+            </svg>
+          </button> -->
+        </div>
 
       </div>
     </section>
@@ -119,6 +137,11 @@
           <li class="gallery__item">
             <a href="https://seltaria.github.io/advice-generator/">
               <img src="img/advice-1.jpg" alt="" width="300px">
+            </a>
+          </li>
+          <li class="gallery__item">
+            <a href="https://seltaria.github.io/todo/">
+              <img src="img/todo-1.jpg" alt="" width="300px">
             </a>
           </li>
         </ul>
