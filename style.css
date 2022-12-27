@@ -16,7 +16,6 @@ html {
 body {
   margin: 0;
   background-color: rgb(16, 7, 36);
-  /* background: linear-gradient(90deg, rgb(20, 0, 51), rgb(111, 84, 150)); */
   color: rgb(242, 234, 255);
   font-family: 'Futura Std', sans-serif;
   font-size: 16px;
@@ -94,10 +93,6 @@ button {
 /* HEADER */
 
 .header {
-  /* display: flex;
-  justify-content: space-between;
-  align-items: center; */
-  /* padding: 30px 300px 30px 100px; */
   padding-top: 30px;
   padding-bottom: 30px;
 }
@@ -119,7 +114,6 @@ button {
   width: 100%;
   height: 3px;
   background: linear-gradient(90deg,rgb(176, 255, 79, 0.1), rgb(40, 191, 105), rgb(176, 255, 79), rgb(247, 255, 98), rgb(255, 127, 73), rgb(255, 127, 73, 0.1));
-  /* background: linear-gradient(90deg, rgb(40, 191, 105), rgb(176, 255, 79), rgb(247, 255, 98), rgb(255, 127, 73)); */
 }
 
 .nav__list {
@@ -136,9 +130,6 @@ button {
 }
 
 .nav__link:hover {
-  /* background: -webkit-linear-gradient(0deg, rgb(176, 255, 79), rgb(255, 242, 0));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
   color: yellow;
 }
 
@@ -163,7 +154,6 @@ button {
   width: 100%;
   height: 100%;
   opacity: 0.6;
-  /* background-image: url('img/mahdi-bafande-DsMdMRNcHAo-unsplash.jpg'); */
   background-image: url('img/5447769.jpg');
   background-repeat: no-repeat;
   background-position: center;
@@ -238,7 +228,6 @@ button {
   width: 100px;
   height: 100px;
   background-color: #19193c;
-  /* border: 1px solid white; */
   box-shadow: 2px 2px 0px #e1b896;
   transition-property: box-shadow, transform, color;
   transition-duration: var(--duration);
@@ -361,7 +350,6 @@ button {
 }
 
 .button-up:hover {
-  /* border-color: #e1b896; */
   border-color: transparent;
 }
 
