@@ -154,7 +154,7 @@ button {
   width: 100%;
   height: 100%;
   opacity: 0.6;
-  background-image: url('img/5447769.jpg');
+  background-image: url('img/5447769-com.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -309,17 +309,17 @@ button {
 }
 
 #react::before {
-  background-image: url("/img/5447769-top-6.png");
+  background-image: url("/img/5447769-top-6-com.png");
   background-position: bottom;
 }
 
 #web-layout::before {
-  background-image: url("/img/5447769-mid.png");
+  background-image: url("/img/5447769-mid-com.png");
   background-position: center;
 }
 
 #js::before {
-  background-image: url("/img/5447769-bottom-4.png");
+  background-image: url("/img/5447769-bottom-4-com.png");
   background-position: top;
 }
 
@@ -388,4 +388,31 @@ button {
 
 .button-up:hover svg {
   fill: yellow;
+}
+
+
+@media (max-width: 700px) {
+
+  .header__container {
+    flex-direction: column;
+  }
+
+  .header__logo {
+    margin-bottom: 20px;
+  }
+
+  .description__container {
+    width: 200px;
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 }
