@@ -57,37 +57,32 @@ button {
 
 /* IMAGES */
 
-.img-alpaca {
+#img-fox {
   position: absolute;
-  top: 10px;
-  right: -50px;
-  width: 300px;
-  transform: scaleX(-1) rotate(20deg);
+  top: -15px;
+  left: calc(100% - 80px);
+  width: 80px;
+  z-index: -1;
+  opacity: 0.5;
 }
 
-.img-crocodile {
+#img-raccoon {
   position: absolute;
-  top: 150px;
-  left: -20px;
-  width: 200px;
-  transform: rotate(20deg);
+  top: -15px;
+  left: 0;
+  width: 80px;
+  transform: scaleX(-1);
+  z-index: -1;
+  opacity: 0.5;
 }
 
-.img-fox {
+#img-pug {
   position: absolute;
-  top: 550px;
-  left: 100px;
-  width: 250px;
-  transform: rotate(-20deg);
-}
-
-.blob1 {
-  position: absolute;
-  top: 250px;
-  right: -100px;
-  width: 350px;
-  transform: rotate(-120deg);
-  z-index: 1;
+  top: 5px;
+  left: 5px;
+  width: 80px;
+  z-index: -1;
+  opacity: 0.5;
 }
 
 /* HEADER */
@@ -126,11 +121,18 @@ button {
 }
 
 .nav__link {
-  transition: color var(--duration) ease-in-out;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition-property: color, background-size;
+  transition-duration: var(--duration);
+  transition-timing-function: ease-in-out;
 }
 
 .nav__link:hover {
   color: yellow;
+  background-size: 100% 1px;
 }
 
 /* DESCRIPTION */
@@ -183,7 +185,10 @@ button {
   width: 595px;
   height: 78px;
   border: 3px solid #e1b896;
-  /* z-index: -1; */
+}
+
+.skills__item-pug {
+  position: relative;
 }
 
 /* SECTION */
@@ -243,19 +248,11 @@ button {
 /* GALLERY */
 
 .gallery__list {
-  /* max-width: 80%;
-  overflow: hidden; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 50px;
 }
-
-/* .gallery__wrapper {
-  display: flex;
-  align-items: center;
-  position: relative;
-} */
 
 .gallery__item {
   transition: transform var(--duration) ease-in-out;
@@ -314,13 +311,13 @@ button {
 }
 
 #web-layout::before {
-  background-image: url("/img/5447769-mid-com.png");
-  background-position: center;
+  background-image: url("/img/5447769-bottom-4-com.png");
+  background-position: top;
 }
 
 #js::before {
-  background-image: url("/img/5447769-bottom-4-com.png");
-  background-position: top;
+  background-image: url("/img/5447769-mid-com.png");
+  background-position: center;
 }
 
 #react .container,
@@ -330,8 +327,11 @@ button {
 }
 
 #web-layout {
-  padding-bottom: 200px;
-  background-color: #172040;
+  padding-bottom: 0;
+}
+
+#web-layout .container {
+  transform: translateY(-180px);
 }
 
 #react {
@@ -343,11 +343,10 @@ button {
 }
 
 #js {
-  padding-bottom: 0;
+  padding-bottom: 200px;
+  background-color: #172040;
 }
-#js .container {
-  transform: translateY(-180px);
-}
+
 
 /* FOOTER */
 
@@ -361,13 +360,14 @@ button {
   font-size: 12px;
 }
 
-.footer__freepik a {
+.footer a {
   color: rgb(100, 100, 196);
 }
 
 /* BUTTON */
 
 .button-up {
+  display: none;
   position: fixed;
   right: 20px;
   bottom: 20px;
@@ -375,11 +375,15 @@ button {
   height: 40px;
   border-radius: 50%;
   border: 1px solid white;
-  transition: border-color var(--duration) ease-in-out;
+  transition-property: border-color, box-shadow, transform;
+  transition-duration: var(--duration);
+  transition-timing-function: ease-in-out;
 }
 
 .button-up:hover {
+  box-shadow: 0 0 10px yellow;
   border-color: transparent;
+  transform: scale(1.1);
 }
 
 .button-up svg {

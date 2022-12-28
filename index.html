@@ -23,23 +23,20 @@
       <h1 class="header__logo">Seltaria | Portfolio</h1>
       <nav class="nav">
         <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#react__container">React</a></li>
+          <li class="nav__item"><a class="nav__link" href="#React-block">React</a></li>
+          <li class="nav__item"><a class="nav__link" href="#JavaScript">JavaScript</a></li>
           <li class="nav__item"><a class="nav__link" href="#web-layout">Web Layout</a></li>
-          <li class="nav__item"><a class="nav__link" href="#js__container">JavaScript</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- <img class="img-alpaca" src="img/alpaca.png" alt="">
-  <img class="img-crocodile" src="img/crocodile.png" alt="">
-  <img class="img-fox" src="img/fox.png" alt=""> -->
-  <!-- <img class="blob1" src="img/Vector.png" alt=""> -->
-
   <main>
     <section class="section description">
       <div class="container description__container">
         Я Настя, начинающий фронтенд-разработчик.
+        <img id="img-fox" src="img/fox.png" alt="">
+        <img id="img-raccoon" src="img/raccoon.png" alt="">
       </div>
     </section>
 
@@ -51,7 +48,9 @@
           <li class="skills__item">CSS</li>
           <li class="skills__item">JS</li>
           <li class="skills__item">React</li>
-          <li class="skills__item">Pug</li>
+          <li class="skills__item skills__item-pug">Pug
+            <img id="img-pug" src="img/pug.png" alt="">
+          </li>
           <li class="skills__item">SCSS</li>
           <li class="skills__item">Flex</li>
           <li class="skills__item">Grid</li>
@@ -60,23 +59,13 @@
     </section>
 
     <section id="react">
-      <div class="container" id="react__container">
+      <div class="container" id="React-block">
         <p class="section__text">
           Делала в React разные штуки
         </p>
 
         <div class="gallery__container">
-          <!-- <button class="left">
-            <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-              <path id="XMLID_224_"
-                d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
-                l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
-                C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
-            </svg>
-          </button> -->
           <ul class="gallery__list">
-            <!-- <div class="gallery__wrapper"> -->
             <li class="gallery__item">
               <a class="gallery__link" href="https://seltaria.github.io/rock-paper-scissors-page/">
                 <img src="img/rock-1.jpg" alt="" width="300px">
@@ -92,19 +81,29 @@
                 <img src="img/dash-1.jpg" alt="" width="300px">
               </a>
             </li>
-            <!-- </div> -->
           </ul>
-          <!-- <button class="right">
-            <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-              <path id="XMLID_225_"
-                d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
-              l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
-              C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
-            </svg>
-          </button> -->
         </div>
 
+      </div>
+    </section>
+
+    <section id="js">
+      <div class="container" id="JavaScript">
+        <p class="section__text">
+          Делала штуки с js
+        </p>
+        <ul class="gallery__list">
+          <li class="gallery__item">
+            <a href="https://seltaria.github.io/advice-generator/">
+              <img src="img/advice-1.jpg" alt="" width="300px">
+            </a>
+          </li>
+          <li class="gallery__item">
+            <a href="https://seltaria.github.io/todo/">
+              <img src="img/todo-1.jpg" alt="" width="300px">
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -128,26 +127,6 @@
       </div>
     </section>
 
-    <section id="js">
-      <div class="container" id="js__container">
-        <p class="section__text">
-          Делала штуки с js
-        </p>
-        <ul class="gallery__list">
-          <li class="gallery__item">
-            <a href="https://seltaria.github.io/advice-generator/">
-              <img src="img/advice-1.jpg" alt="" width="300px">
-            </a>
-          </li>
-          <li class="gallery__item">
-            <a href="https://seltaria.github.io/todo/">
-              <img src="img/todo-1.jpg" alt="" width="300px">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <button class="button-up">
       <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
@@ -164,7 +143,8 @@
       Изображение от <a
         href="https://ru.freepik.com/free-vector/gradient-golden-linear-background_14456030.htm#query=pattern&position=44&from_view=search&track=sph">Freepik</a>
     </div>
-    <div>Остальное моё</div>
+    <div>Стикеры от <a href="https://www.flaticon.com/free-stickers/animals" title="animals stickers">
+        Flaticon</a></div>
   </footer>
 
   <div class="header__border"></div>

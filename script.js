@@ -14,10 +14,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
   /* GSAP */
 
-  gsap.timeline()
-  // .from(".skills__item", { duration: .3, opacity: 0, ease: "power3.out", stagger: 0.3 }, "-=0.5")
-  // .from(".hero__descr", {duration: 1, opacity: 0, ease: "power3.out"})
-  // .from(".skills__item", { duration: 1, opacity: 0, scale: 0.7, stagger: 0.3 }, "-=0.5")
-  // .from(".photos__author", {duration: 1, opacity: 0}, "-=0.5")
+  document.querySelector('.description__container').addEventListener('mouseover', () => {
+    gsap.to('#img-fox', { opacity: 0, x: 300, duration: 2 });
+    gsap.to('#img-raccoon', { opacity: 0, x: -300, duration: 2 });
+  })
+  document.querySelector('.skills__item-pug').addEventListener('mouseover', () => {
+    gsap.to('#img-pug', { opacity: 0, scale: 1.5, duration: 1 });
+  })
 
 })
