@@ -131,7 +131,7 @@ button {
 }
 
 .nav__link:hover {
-  color: yellow;
+  color: #e1b896;
   background-size: 100% 1px;
 }
 
@@ -256,13 +256,28 @@ button {
 }
 
 .gallery__item {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 50px;
+}
+
+.gallery__item > a {
   transition: transform var(--duration) ease-in-out;
   outline: 1px solid white;
   outline-offset: 6px;
 }
 
-.gallery__item:hover {
+.gallery__item a:hover {
   transform: scale(1.05);
+}
+
+.gallery__item-description a {
+  text-decoration: underline;
+  transition: color var(--duration) ease-in-out;
+}
+
+.gallery__item-description a:hover {
+  color: #e1b896;
 }
 
 .left,
@@ -382,7 +397,7 @@ button {
 }
 
 .button-up:hover {
-  box-shadow: 0 0 10px yellow;
+  box-shadow: 0 0 10px #e1b896;
   border-color: transparent;
   transform: scale(1.1);
 }
@@ -392,7 +407,7 @@ button {
 }
 
 .button-up:hover svg {
-  fill: yellow;
+  fill: #e1b896;
 }
 
 
