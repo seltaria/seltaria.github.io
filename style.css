@@ -258,10 +258,12 @@ button {
 .gallery__item {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  align-items: center;
   gap: 50px;
 }
 
 .gallery__item > a {
+  height: fit-content;
   transition: transform var(--duration) ease-in-out;
   outline: 1px solid white;
   outline-offset: 6px;
@@ -430,6 +432,19 @@ button {
     padding: 10px;
   }
 
+  .gallery__item {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery__item > a {
+    width: fit-content;
+  }
+
+  .gallery__item-description {
+    font-size: 14px;
+  }
+
 }
 
 @media (max-width: 450px) {
@@ -437,6 +452,10 @@ button {
   .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+
+  .gallery__item-description {
+    width: 80%;
   }
 
 }
