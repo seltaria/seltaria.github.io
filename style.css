@@ -150,7 +150,7 @@ button {
   position: relative;
   padding-top: 100px;
   padding-bottom: 100px;
-  height: 400px;
+  height: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -246,6 +246,10 @@ button {
   gap: 30px;
 }
 
+.skills__list:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 .skills__item {
   display: flex;
   align-items: center;
@@ -260,9 +264,21 @@ button {
 }
 
 .skills__item:hover {
-  /* color: yellow; */
   color: var(--my-color);
   box-shadow: 4px 4px 0px var(--my-color);
+  transform: translate(-2px, -2px);
+}
+
+.skills__basic {
+  width: 90px;
+  height: 90px;
+  font-size: 14px;
+  box-shadow: 1px 1px 0px var(--my-color);;
+}
+
+.skills__basic:hover {
+  color: var(--my-color);
+  box-shadow: 2px 3px 0px var(--my-color);
   transform: translate(-2px, -2px);
 }
 
@@ -434,10 +450,6 @@ button {
 
 
 @media (max-width: 700px) {
-
-  .description::before {
-    background-position: center;
-  }
 
   .header__container {
     flex-direction: column;

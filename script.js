@@ -12,14 +12,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  /* GSAP */
-
-  // document.querySelector('.description__container').addEventListener('mouseover', () => {
-  //   gsap.to('#img-fox', { opacity: 0, x: 300, duration: 2 });
-  //   gsap.to('#img-raccoon', { opacity: 0, x: -300, duration: 2 });
-  // })
-  // document.querySelector('.skills__item-pug').addEventListener('mouseover', () => {
-  //   gsap.to('#img-pug', { opacity: 0, scale: 1.5, duration: 1 });
-  // })
-
 })
