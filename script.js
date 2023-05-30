@@ -17,11 +17,11 @@ let slides = 6;
 if (innerWidth < 400) {
   slides = 2;
 } else if (innerWidth < 500) {
-  slides = 3;
-} else if (innerWidth < 900) {
   slides = 4;
-} else {
+} else if (innerWidth < 900) {
   slides = 6;
+} else {
+  slides = 8;
 }
 
 
