@@ -5,15 +5,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="shortcut icon" href="img/paw.png" type="image/x-icon">
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="style.css">
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script type="module" src="script.js"></script>
 
   <title>Portfolio</title>
@@ -22,93 +15,118 @@
 <body>
   <div class="header__border"></div>
 
-  <header class="header">
-    <div class="container header__container">
-      <h1 class="header__logo"><span>|</span> Portfolio</h1>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#React-block">React</a></li>
-          <li class="nav__item"><a class="nav__link" href="#JavaScript">JavaScript</a></li>
-          <li class="nav__item"><a class="nav__link" href="#web-layout">Web Layout</a></li>
-        </ul>
-      </nav>
-    </div>
-
+  <div class="main">
     <section class="section description">
       <div class="container description__container">
-        Я Настя, <span>фронтенд-разработчик</span>
-      </div>
-      <div class="swiper description__row">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/sneakers/"><img
-                src="img/sneakers-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/blanchard/"><img
-                src="img/blanchard-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/todo"><img
-                src="img/todo-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/pomodoro"><img
-                src="img/pomodoro-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/rock-paper-scissors-page/"><img
-                src="img/rock-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/multi-step-form/"><img
-                src="img/form-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/todo"><img
-                src="img/todo-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/crm-react/"><img
-                src="img/crm-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/advice-generator/"><img
-                src="img/advice-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/pets-web-page/"><img
-                src="img/shelter-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/todo"><img
-                src="img/todo-1.jpg" /></a></div>
-          <div class="swiper-slide"><a target="_blank" href="https://seltaria.github.io/grid-photo-page/"><img
-                src="img/photo-1.jpg" /></a></div>
+        <div class="description__content">
+          <div class="description__personal_info">
+            <div class="description__name">
+              Бондарева Анастасия
+            </div>
+            <div class="description__title">
+              Frontend Developer
+            </div>
+            <div class="description__text">
+              Верю, что Frontend-разработчики делают веб-мир лучше.
+            </div>
+          </div>
+          <div class="description__contacts">
+            <a href="http://t.me/seltaria" class="description__contact description__contact_tg">@seltaria</a>
+            <a href="https://spb.hh.ru/resume/d9eed43eff0dc0c2350039ed1f533957755342" class="description__contact description__contact_hh">HeadHunter</a>
+            <a href="mailto:seltaria@mail.ru" class="description__contact description__contact_mail">seltaria@mail.ru</a>
+          </div>
+        </div>
+        <div class="description__visual_block">
+          <div class="description__photo">
+            <img class="description__image" src="./img/PXL_20240817_085147112.jpg" />
+          </div>
+          <div class="tags">
+            <div class="tags__item">Санкт-Петербург</div>
+            <div class="tags__item">27 лет</div>
+            <div class="tags__item">1 год опыта</div>
+          </div>
         </div>
       </div>
-      <a href="#react" class="description__more">Подробнее
-        <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve">
-          <path id="XMLID_224_"
-            d="M325.606,229.393l-150.004-150C172.79,76.58,168.974,75,164.996,75c-3.979,0-7.794,1.581-10.607,4.394
-            l-149.996,150c-5.858,5.858-5.858,15.355,0,21.213c5.857,5.857,15.355,5.858,21.213,0l139.39-139.393l139.397,139.393
-            C307.322,253.536,311.161,255,315,255c3.839,0,7.678-1.464,10.607-4.394C331.464,244.748,331.464,235.251,325.606,229.393z" />
-        </svg>
-      </a>
     </section>
-  </header>
-
-  <div class="main">
 
 
     <section class="skills">
-      <div class="container">
-        <h2 class="skills__title skills__title_full">Работаю с :</h2>
-
+      <div class="container skills__container">
+        <h2 class="skills__title">Использую в работе</h2>
         <ul class="skills__list">
-          <li class="skills__item">HTML</li>
-          <li class="skills__item">CSS</li>
-          <li class="skills__item">JS</li>
-          <li class="skills__item">React</li>
-          <li class="skills__item">Redux</li>
-          <li class="skills__item">Flex</li>
-          <li class="skills__item">Grid</li>
-          <li class="skills__item">Figma</li>
-          <li class="skills__item">Git</li>
+          <li class="skills__item skills__item_react">React</li>
+          <li class="skills__item skills__item_redux">Redux</li>
+          <li class="skills__item skills__item_js">Javascript</li>
+          <li class="skills__item skills__item_ts">Typescript</li>
+          <li class="skills__item skills__item_git">Git</li>
+          <li class="skills__item skills__item_figma">Figma</li>
+          <li class="skills__item skills__item_ant">Ant Design</li>
+          <li class="skills__item skills__item_html">HTML</li>
+          <li class="skills__item skills__item_css">CSS</li>
+          <li class="skills__item skills__item_scss">SCSS</li>
         </ul>
-
-        <h2 class="skills__title skills__title_also">Также знакома с:</h2>
-        <ul class="skills__list skills__basic-list">
-          <li class="skills__item skills__basic">TypeScript</li>
-          <li class="skills__item skills__basic">GSAP</li>
-          <li class="skills__item skills__basic">Pug</li>
-          <li class="skills__item skills__basic">SCSS</li>
-          <li class="skills__item skills__basic">Photoshop</li>
-        </ul>
+        <div class="skills__additional">
+          <div>При необходимости могу прочитать документацию и использовать что-либо ещё. Использовала в проектах:</div>
+          <ul class="skills__list">
+            <li>Jest</li>
+            <li>React Native</li>
+            <li>Firebase</li>
+            <li>Pug</li>
+            <li>Socket.io</li>
+          </ul>
+        </div>
       </div>
     </section>
 
-    <section id="react">
+    <section id="propjects">
+      <div class="container projects__container">
+
+        <h2>Примеры работ</h2>
+
+        <ul class="projects__list">
+          <li class="projects__item">
+            <h3 class="projects__title">📑 TODO</h3>
+            <div class="projects__content">
+              <img class="projects__image" src="img/todo-1.jpg" alt="Todo project" width="300px">
+              <div class="projects__item_description">
+                <div class="projects__text">
+                  Приложение для записи дел с возможностью редактирования дел, переключения темной и светлой темы, загрузки
+                  своего изображения вместо стандартного, добавлены папки для хранения дел по
+                  разным категориям.
+                </div>
+                <div class="projects__links">
+                  <a class="projects__link" target="_blank" href="https://seltaria.github.io/todo">Сайт</a>
+                  <a class="projects__link" target="_blank" href="https://github.com/seltaria/todo">Репозиторий</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="projects__item">
+            <h3 class="projects__title">🍅 Pomodoro</h3>
+            <div class="projects__content">
+              <img class="projects__image" src="img/pomodoro-1.jpg" alt="Todo project" width="300px">
+              <div class="projects__item_description">
+                <div class="projects__text">
+                  Приложение Pomodoro с таймером и статистикой. Написано с помощью библиотеки <span
+                  class="instrument">React</span>
+                </div>
+                <div class="projects__links">
+                  <a class="projects__link" target="_blank" href="https://seltaria.github.io/pomodoro">Сайт</a>
+                  <a class="projects__link" target="_blank" href="https://github.com/seltaria/pomodoro/tree/master">Репозиторий</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="projects__test">🔅 Могу выполнить тестовое задание, чтобы показать свои навыки</div>
+
+      </div>
+    </section>
+
+    <!-- <section id="react">
       <div class="container" id="React-block">
         <p class="section__text">
           Проекты с использованием <span class="instrument">React</span>:
@@ -183,71 +201,7 @@
         </div>
 
       </div>
-    </section>
-
-    <section id="js">
-      <div class="container" id="JavaScript">
-        <p class="section__text">
-          Проекты на <span class="instrument">JavaScript</span>:
-        </p>
-        <ul class="gallery__list">
-
-          <li class="gallery__item">
-            <a target="_blank" href="https://seltaria.github.io/todo/">
-              <img src="img/todo-1.jpg" alt="" width="300px">
-            </a>
-            <div class="gallery__item-description">
-              Приложение для записи дел с возможностью редактирования дел, переключения темной и светлой темы, загрузки
-              своего изображения вместо стандартного. В последнем обновлении были добавлены папки для хранения дел по
-              разным категориям.
-              <br><br>
-              <a target="_blank" href="https://github.com/seltaria/todo">Ссылка</a> на GitHub-репозиторий. <br>
-              <a target="_blank" href="https://seltaria.github.io/todo">Ссылка</a> на GitHub-pages.
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </section>
-
-    <section id="web-layout">
-      <div class="container">
-        <p class="section__text">
-          Проекты по верстке сайтов:
-        </p>
-        <ul class="gallery__list">
-
-          <li class="gallery__item">
-            <a target="_blank" href="https://seltaria.github.io/blanchard/">
-              <img src="img/blanchard-1.jpg" alt="" width="300px">
-            </a>
-            <div class="gallery__item-description">
-              Одностраничный сайт художественной галереи Blanchard. Для анимаций использована библиотека <span
-                class="instrument">Green Sock</span>
-              <br><br>
-              <a target="_blank" href="https://github.com/seltaria/blanchard">Ссылка</a> на GitHub-репозиторий. <br>
-              <a target="_blank" href="https://seltaria.github.io/blanchard">Ссылка</a> на GitHub-pages.
-            </div>
-          </li>
-
-          <li class="gallery__item">
-            <a target="_blank" href="https://seltaria.github.io/grid-photo-page/">
-              <img src="img/photo-1.jpg" alt="" width="300px">
-            </a>
-            <div class="gallery__item-description">
-              Одностраничный сайт, сверстанный с использованием <span class="instrument">grid</span>, препроцессоров
-              <span class="instrument">Pug</span> и <span class="instrument">SCSS</span> и сборщика <span
-                class="instrument">Gulp</span>.
-              <br><br>
-              <a target="_blank" href="https://github.com/seltaria/grid-photo-page">Ссылка</a> на GitHub-репозиторий.
-              <br>
-              <a target="_blank" href="https://seltaria.github.io/grid-photo-page">Ссылка</a> на GitHub-pages.
-            </div>
-          </li>
-
-        </ul>
-      </div>
-    </section>
+    </section> -->
 
     <button class="button-up">
       <svg fill="#FFFFFF" height="20px" width="20px" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
