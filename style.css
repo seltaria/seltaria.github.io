@@ -5,8 +5,11 @@
   --my-color: #C9EEFF;
   --my-color-light: #EFFAFF;
   --my-color-dark: #0f91cd;
+  --my-color-dark-hover: #015e8a;
   --background: #F2F2F2;
-  --black: rgb(22, 22, 22);
+  --black: rgb(48 48 48);
+  --white: #fcfcfc;
+  --white-dark: #f7f7f7;
 }
 
 * {
@@ -42,13 +45,14 @@ body {
 
 /* ползунок скроллбара */
 ::-webkit-scrollbar-thumb {
-  background-color: var(--my-color);
+  border: 1px solid var(--my-color);
+  background-color: var(--my-color-light);
   border-radius: 9em;
   transition: background-color .2s ease-in-out;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #dbe1b0; /* TODO: поменять цвет*/
+  background-color: var(--my-color);
 }
 
 img {
@@ -81,6 +85,7 @@ button {
   max-width: 1000px;
   margin: 0 auto;
   padding: 0 100px;
+  border: 1px solid var(--my-color);
 }
 
 .instrument {
@@ -94,7 +99,7 @@ button {
   justify-content: space-between;
   gap: 40px;
   padding: 64px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 16px;
 }
 
@@ -102,6 +107,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 32px;
   min-height: 300px;
 }
 
@@ -129,6 +135,13 @@ button {
   padding: 4px 0 4px 32px;
   background: left no-repeat;
   border-bottom: 1px solid transparent;
+  transition: color 0.2s ease-in-out;
+}
+
+.description__contact:hover,
+.description__contact:focus,
+.description__contact:active {
+  color: var(--my-color-dark-hover);
 }
 
 .description__contact_tg {
@@ -143,11 +156,11 @@ button {
   background-image: url(./img/svg/mail.svg);
 }
 
-.description__image,
-.description__background_image {
+.description__image {
   position: relative;
   width: 180px;
   height: 240px;
+  border: 1px solid var(--my-color-dark);
   border-radius: 24px;
   z-index: 1;
 }
@@ -197,7 +210,7 @@ button {
 
 .skills__container {
   padding: 64px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 16px;
 }
 
@@ -272,7 +285,7 @@ button {
 
 .projects__container {
   padding: 64px;
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 16px;
 }
 
@@ -334,6 +347,7 @@ button {
 }
 
 .projects__image {
+  border: 1px solid var(--white-dark);
   border-radius: 8px;
 }
 
@@ -363,6 +377,11 @@ button {
   border: 1px solid var(--my-color);
   border-radius: 8px;
   min-width: 100px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.projects__link:hover {
+  background-color: var(--my-color-light);
 }
 
 
