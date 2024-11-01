@@ -30,6 +30,9 @@ body {
 }
 
 .main {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -320,14 +323,20 @@ button {
 .projects__list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 48px;
 }
 
 .projects__title {
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 8px;
   font-weight: 300;
   font-size: 24px;
+  font-weight: 400;
+}
+
+.projects__title span {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .projects__content {
@@ -347,6 +356,7 @@ button {
 }
 
 .projects__image {
+  flex-shrink: 0;
   border: 1px solid var(--white-dark);
   border-radius: 8px;
 }
