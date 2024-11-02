@@ -10,6 +10,12 @@
   --black: rgb(48 48 48);
   --white: #fcfcfc;
   --white-dark: #f7f7f7;
+
+  --dark-bg: #252525;
+  --dark-card: #404040;
+  --dark-text: #EAEAEA;
+  --dark-border: #606060;
+  --dark-links: #93d6f4;
 }
 
 * {
@@ -27,6 +33,11 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   overflow-x: hidden;
+}
+
+body.dark {
+  background-color: var(--dark-bg);
+  color: var(--dark-text);
 }
 
 .main {
@@ -89,6 +100,15 @@ button {
   margin: 0 auto;
   padding: 0 100px;
   border: 1px solid var(--my-color);
+
+  padding: 64px;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+
+body.dark .container {
+  border: none;
+  background-color: var(--dark-card);
 }
 
 .instrument {
@@ -101,9 +121,6 @@ button {
   display: flex;
   justify-content: space-between;
   gap: 40px;
-  padding: 64px;
-  background-color: var(--white);
-  border-radius: 16px;
 }
 
 .description__content {
@@ -121,6 +138,17 @@ button {
   gap: 8px;
 }
 
+.description__contacts div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+body.dark .description__contacts div svg path {
+  stroke: white;
+  fill: var(--dark-bg);
+}
+
 .description__title {
   font-size: 48px;
   line-height: 1;
@@ -135,28 +163,20 @@ button {
 .description__contact {
   width: fit-content;
   color: var(--my-color-dark);
-  padding: 4px 0 4px 32px;
+  /* padding: 4px 0 4px 32px; */
   background: left no-repeat;
   border-bottom: 1px solid transparent;
   transition: color 0.2s ease-in-out;
+}
+
+body.dark .description__contact {
+  color: var(--dark-links);
 }
 
 .description__contact:hover,
 .description__contact:focus,
 .description__contact:active {
   color: var(--my-color-dark-hover);
-}
-
-.description__contact_tg {
-  background-image: url(./img/svg/telegram.svg);
-}
-
-.description__contact_hh {
-  background-image: url(./img/svg/hh.svg);
-}
-
-.description__contact_mail {
-  background-image: url(./img/svg/mail.svg);
 }
 
 .description__image {
@@ -168,6 +188,10 @@ button {
   z-index: 1;
 }
 
+body.dark .description__image {
+  border: none;
+}
+
 .tags {
   display: flex;
   align-items: center;
@@ -176,10 +200,15 @@ button {
 
 .tags__item {
   flex-shrink: 0;
-  padding: 5px;
+  padding: 5px 16px;
   border-radius: 8px;
   border: 1px solid var(--my-color);
   background-color: var(--my-color-light);
+}
+
+body.dark .tags__item {
+  border: none;
+  background-color: var(--dark-bg);
 }
 
 .description__visual_block {
@@ -210,12 +239,6 @@ button {
 }
 
 /* SKILLS */
-
-.skills__container {
-  padding: 64px;
-  background-color: var(--white);
-  border-radius: 16px;
-}
 
 .skills__title {
   margin-top: 0;
@@ -286,12 +309,6 @@ button {
 
 /* PROJECTS */
 
-.projects__container {
-  padding: 64px;
-  background-color: var(--white);
-  border-radius: 16px;
-}
-
 .projects__test {
   margin-top: 32px;
   font-size: 18px;
@@ -320,6 +337,11 @@ button {
   border-radius: 4px;
 }
 
+body.dark .projects__container h2::before,
+body.dark .skills__title::before {
+  background-color: var(--dark-bg);
+}
+
 .projects__list {
   display: flex;
   flex-direction: column;
@@ -341,6 +363,7 @@ button {
 
 .projects__content {
   display: flex;
+  align-items: center;
   gap: 32px;
 }
 
@@ -351,7 +374,6 @@ button {
 
   .projects__item_description {
     margin-top: 0;
-    gap: 16px;
   }
 }
 
@@ -359,12 +381,19 @@ button {
   flex-shrink: 0;
   border: 1px solid var(--white-dark);
   border-radius: 8px;
+  height: 180px;
+  object-fit: cover;
+}
+
+body.dark .projects__image {
+  border: 1px solid var(--dark-border);
 }
 
 .projects__item_description {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  gap: 16px;
 }
 
 .projects__text {
@@ -372,6 +401,11 @@ button {
   border-radius: 16px;
   border: 1px solid var(--my-color);
   background-color: var(--my-color-light);
+}
+
+body.dark .projects__text {
+  border: none;
+  background-color: var(--dark-bg);
 }
 
 .projects__links {
@@ -392,6 +426,10 @@ button {
 
 .projects__link:hover {
   background-color: var(--my-color-light);
+}
+
+body.dark .projects__link:hover {
+  background-color: var(--dark-bg);
 }
 
 

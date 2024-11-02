@@ -12,7 +12,7 @@
   <title>Portfolio</title>
 </head>
 
-<body>
+<body class="dark"> <!-- TODO: dark mode -->
   <div class="header__border"></div>
 
   <div class="main">
@@ -31,9 +31,23 @@
             </div>
           </div>
           <div class="description__contacts">
-            <a href="http://t.me/seltaria" class="description__contact description__contact_tg">@seltaria</a>
-            <a href="https://spb.hh.ru/resume/d9eed43eff0dc0c2350039ed1f533957755342" class="description__contact description__contact_hh">HeadHunter</a>
-            <a href="mailto:seltaria@mail.ru" class="description__contact description__contact_mail">seltaria@mail.ru</a>
+            <div>
+              <img src="./img/svg/telegram.svg" />
+              <a href="http://t.me/seltaria" class="description__contact description__contact_tg">@seltaria</a>
+            </div>
+            <div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.25 2.75H4.75C3.64543 2.75 2.75 3.64543 2.75 4.75V19.25C2.75 20.3546 3.64543 21.25 4.75 21.25H19.25C20.3546 21.25 21.25 20.3546 21.25 19.25V4.75C21.25 3.64543 20.3546 2.75 19.25 2.75Z" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M7.3125 8.25V15.75M7.3125 12.6565C7.3125 12.1592 7.51004 11.6823 7.86167 11.3307C8.21331 10.979 8.69022 10.7815 9.1875 10.7815C9.68478 10.7815 10.1617 10.979 10.5133 11.3307C10.865 11.6823 11.0625 12.1592 11.0625 12.6565V15.75M12.9375 8.25V15.75M12.9375 12.6565C12.9375 12.1592 13.135 11.6823 13.4867 11.3307C13.8383 10.979 14.3152 10.7815 14.8125 10.7815C15.0587 10.7815 15.3025 10.83 15.53 10.9242C15.7575 11.0185 15.9642 11.1566 16.1383 11.3307C16.3124 11.5048 16.4505 11.7115 16.5448 11.939C16.639 12.1665 16.6875 12.4103 16.6875 12.6565V15.75" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <a href="https://spb.hh.ru/resume/d9eed43eff0dc0c2350039ed1f533957755342" class="description__contact description__contact_hh">HeadHunter</a>
+            </div>
+            <div>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 20C3.45 20 2.97933 19.8043 2.588 19.413C2.19667 19.0217 2.00067 18.5507 2 18V6C2 5.45 2.196 4.97933 2.588 4.588C2.98 4.19667 3.45067 4.00067 4 4H20C20.55 4 21.021 4.196 21.413 4.588C21.805 4.98 22.0007 5.45067 22 6V18C22 18.55 21.8043 19.021 21.413 19.413C21.0217 19.805 20.5507 20.0007 20 20H4ZM12 13L20 8V6L12 11L4 6V8L12 13Z" fill="black"/>
+              </svg>
+              <a href="mailto:seltaria@mail.ru" class="description__contact description__contact_mail">seltaria@mail.ru</a>
+            </div>
           </div>
         </div>
         <div class="description__visual_block">
@@ -41,7 +55,7 @@
             <img class="description__image" src="./img/PXL_20240817_085147112.jpg" />
           </div>
           <div class="tags">
-            <div class="tags__item">Санкт-Петербург</div>
+            <!-- <div class="tags__item">Санкт-Петербург</div> -->
             <div class="tags__item">27 лет</div>
             <div class="tags__item">1 год опыта</div>
           </div>
@@ -105,7 +119,7 @@
           <li class="projects__item">
             <h3 class="projects__title">📑 TODO <span>( Javascript )</span></h3>
             <div class="projects__content">
-              <img class="projects__image" src="img/todo-1.jpg" alt="Todo project" width="300px">
+              <img class="projects__image" src="img/todo-dark.png" alt="Todo project" width="300px">
               <div class="projects__item_description">
                 <div class="projects__text">
                   Приложение для записи дел с возможностью редактирования дел, переключения темной и светлой темы, загрузки
