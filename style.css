@@ -123,12 +123,27 @@ body.dark .container {
   gap: 40px;
 }
 
+@media (max-width: 890px) {
+  .description__container {
+    flex-direction: column-reverse;
+  }
+}
+
 .description__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 32px;
   min-height: 300px;
+}
+
+@media (max-width: 890px) {
+  .description__photo {
+    height: 120px;
+    width: 120px;
+    border-radius: 120px;
+    overflow: hidden;
+  }
 }
 
 .description__personal_info,
@@ -188,6 +203,14 @@ body.dark .description__contact {
   z-index: 1;
 }
 
+@media (max-width: 890px) {
+  .description__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
 body.dark .description__image {
   border: none;
 }
@@ -220,8 +243,8 @@ body.dark .tags__item {
 }
 
 @media (max-width: 890px) {
-  .tags {
-    flex-direction: column;
+  .description__visual_block {
+    align-items: flex-start;
   }
 }
 
@@ -324,7 +347,7 @@ body.dark .tags__item {
   z-index: 1;
 }
 
-.projects__container h2::before,
+/* .projects__container h2::before,
 .skills__title::before {
   content: "";
   position: absolute;
@@ -335,12 +358,12 @@ body.dark .tags__item {
   background-color: var(--my-color-light);
   z-index: -1;
   border-radius: 4px;
-}
+} */
 
-body.dark .projects__container h2::before,
+/* body.dark .projects__container h2::before,
 body.dark .skills__title::before {
   background-color: var(--dark-bg);
-}
+} */
 
 .projects__list {
   display: flex;
@@ -363,7 +386,6 @@ body.dark .skills__title::before {
 
 .projects__content {
   display: flex;
-  align-items: center;
   gap: 32px;
 }
 
