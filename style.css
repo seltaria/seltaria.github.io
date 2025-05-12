@@ -322,6 +322,10 @@ body.dark .tags__item {
   background-image: url(./img/svg/scss.svg);
 }
 
+.skills__item_styled {
+  padding: 4px 0;
+}
+
 .skills__additional {
   margin-top: 32px;
   max-width: 600px;
@@ -409,6 +413,10 @@ body.dark .skills__title::before {
 
 body.dark .projects__image {
   border: 1px solid var(--dark-border);
+}
+
+.projects__image-bot {
+  height: auto;
 }
 
 .projects__item_description {

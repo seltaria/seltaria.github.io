@@ -40,7 +40,7 @@
                 <path d="M19.25 2.75H4.75C3.64543 2.75 2.75 3.64543 2.75 4.75V19.25C2.75 20.3546 3.64543 21.25 4.75 21.25H19.25C20.3546 21.25 21.25 20.3546 21.25 19.25V4.75C21.25 3.64543 20.3546 2.75 19.25 2.75Z" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
                 <path d="M7.3125 8.25V15.75M7.3125 12.6565C7.3125 12.1592 7.51004 11.6823 7.86167 11.3307C8.21331 10.979 8.69022 10.7815 9.1875 10.7815C9.68478 10.7815 10.1617 10.979 10.5133 11.3307C10.865 11.6823 11.0625 12.1592 11.0625 12.6565V15.75M12.9375 8.25V15.75M12.9375 12.6565C12.9375 12.1592 13.135 11.6823 13.4867 11.3307C13.8383 10.979 14.3152 10.7815 14.8125 10.7815C15.0587 10.7815 15.3025 10.83 15.53 10.9242C15.7575 11.0185 15.9642 11.1566 16.1383 11.3307C16.3124 11.5048 16.4505 11.7115 16.5448 11.939C16.639 12.1665 16.6875 12.4103 16.6875 12.6565V15.75" stroke="black" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
-              <a href="https://spb.hh.ru/resume/d9eed43eff0dc0c2350039ed1f533957755342" target="_blank" class="description__contact description__contact_hh">HeadHunter</a>
+              <a href="https://spb.hh.ru/resume/ea9ee10fff0eb104700039ed1f4b4d6e694152" target="_blank" class="description__contact description__contact_hh">HeadHunter</a>
             </div>
             <div>
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
           <li class="skills__item skills__item_html">HTML</li>
           <li class="skills__item skills__item_css">CSS</li>
           <li class="skills__item skills__item_scss">SCSS</li>
-          <li class="skills__item skills__item_styled">Styled Components</li>
+          <li class="skills__item skills__item_styled">💅 Styled Components</li>
         </ul>
         <div class="skills__additional">
           <div>При необходимости могу прочитать документацию и использовать что-либо ещё. Использовала в проектах:</div>
@@ -88,12 +88,16 @@
             <li>Firebase / Supabase</li>
             <li>Pug</li>
             <li>Socket.io</li>
+            <li>Telegraf</li>
+            <li>Mistral API</li>
+            <li>Next.js</li>
+            <li>Node.js</li>
           </ul>
         </div>
       </div>
     </section>
 
-    <section id="propjects">
+    <section id="projects">
       <div class="container projects__container">
 
         <h2>Примеры работ</h2>
@@ -101,28 +105,16 @@
         <ul class="projects__list">
 
           <li class="projects__item">
-            <h3 class="projects__title">📺 Movies <span>( React, RTK Query, Ant Design )</span></h3>
-            <div class="projects__content">
-              <img class="projects__image" src="img/favs.png" alt="Movies project" width="300px">
-              <div class="projects__item_description">
-                <div class="projects__text">
-                  Приложение для поиска фильмов, просмотра информации о них, добавлении фильмов в избранное.
-                </div>
-                <div class="projects__links">
-                  <a class="projects__link" target="_blank" href="https://seltaria.github.io/movies">Сайт</a>
-                  <a class="projects__link" target="_blank" href="https://github.com/seltaria/movies">Репозиторий</a>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="projects__item">
             <h3 class="projects__title">😸 AI Cat Memes <span>( Next.js, Supabase, Mistral )</span></h3>
             <div class="projects__content">
               <img class="projects__image" src="img/mewsome-1.png" alt="Mewsome project" width="300px">
               <div class="projects__item_description">
                 <div class="projects__text">
-                  Случайные картинки с котиками и сгенерированные шутки к ним. Можно добавить в избранное и скачать понравившиеся результаты.
+                  Случайные картинки с котиками и сгенерированные шутки к ним <br>
+                  ✨ можно добавить в избранное и скачать понравившиеся результаты <br>
+                  ✨ или смотреть всех котиков, кем-либо избранных <br><br>
+                  Случайная картинка берётся из Cats API, шутка генерируется с помощью Mistral API, 
+                  данные хранятся в Supabase, деплой на Vercel
                 </div>
                 <div class="projects__links">
                   <a class="projects__link" target="_blank" href="https://mewsome.vercel.app/">Сайт</a>
@@ -133,14 +125,36 @@
           </li>
 
           <li class="projects__item">
-            <h3 class="projects__title">📑 TODO <span>( Javascript )</span></h3>
+            <h3 class="projects__title">📺 Movies <span>( React, RTK Query, Ant Design )</span></h3>
+            <div class="projects__content">
+              <img class="projects__image" src="img/favs.png" alt="Movies project" width="300px">
+              <div class="projects__item_description">
+                <div class="projects__text">
+                  Сайт с фильмами: <br>
+                  ✨ поиск фильмов <br>
+                  ✨ просмотр информации о них <br>
+                  ✨ добавление фильмов в избранное <br>
+                </div>
+                <div class="projects__links">
+                  <a class="projects__link" target="_blank" href="https://seltaria.github.io/movies">Сайт</a>
+                  <a class="projects__link" target="_blank" href="https://github.com/seltaria/movies">Репозиторий</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="projects__item">
+            <h3 class="projects__title">📑 TODO <span>( JavaScript )</span></h3>
             <div class="projects__content">
               <img class="projects__image" src="img/todo-dark.png" alt="Todo project" width="300px">
               <div class="projects__item_description">
                 <div class="projects__text">
-                  Приложение для записи дел с возможностью редактирования дел, переключения темной и светлой темы, загрузки
-                  своего изображения вместо стандартного, добавления папок для хранения дел по
-                  разным категориям.
+                  Приложение для записи дел: <br>
+                  ✨ можно редактировать дела <br>
+                  ✨ переключать тему ( тёмная / светлая ) <br>
+                  ✨ загружать своё изображение вместо стандартного <br>
+                  ✨ добавлять папки для хранения дел по разным категориям <br><br>
+                  Просто JavaScript и ничего лишнего
                 </div>
                 <div class="projects__links">
                   <a class="projects__link" target="_blank" href="https://seltaria.github.io/todo">Сайт</a>
@@ -167,7 +181,28 @@
             </div>
           </li> -->
 
+          <li class="projects__item">
+            <h3 class="projects__title">💁 Telegram Bot <span>( Node.js, Telegraf )</span></h3>
+            <div class="projects__content">
+              <img class="projects__image projects__image-bot" src="img/mewster-bot-qr.png" alt="Mewster bot QR" width="300px">
+              <div class="projects__item_description">
+                <div class="projects__text">
+                  Telegram бот: <br>
+                  ✨ играет в игры с угадыванием числа и со словами <br>
+                  ✨ присылает случайный пост из группы с экспедиционными картинками <br>
+                  ✨ делает картинку дня на тему того, как быстро летит время с начала года <br>
+                  ✨ задеплоен на vercel, работает круглосуточно <br>
+                </div>
+                <div class="projects__links">
+                  <a class="projects__link" target="_blank" href="https://web.telegram.org/a/#1223121041">Сайт</a>
+                  <a class="projects__link" target="_blank" href="https://github.com/seltaria/mewster-bot">Репозиторий</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
         </ul>
+
 
         <div class="projects__test">🔅 Могу выполнить тестовое задание, чтобы показать свои навыки</div>
 
